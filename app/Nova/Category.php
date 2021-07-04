@@ -9,7 +9,7 @@ use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Header extends Resource
+class Category extends Resource
 {
     /**
      * The model the resource corresponds to.
@@ -47,7 +47,7 @@ class Header extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Image::make(__('Category Image'), 'categoryimg')->required()->sortable(),
-            Image::make(__('Category Title'), 'categorytitle')->required()->sortable(),
+            Text::make(__('Category Title'), 'categorytitle')->required()->sortable(),
             Text::make(__('Category Text'), 'categorytext')->hideFromIndex()->sortable(),
             Text::make(__('Category Link'), 'categorylink')->hideFromIndex()->sortable(),
         ];
