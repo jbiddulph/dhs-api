@@ -53,7 +53,7 @@ class Setting extends Resource
             Text::make(__('Telephone'), 'telephone')->required(),
             Markdown::make(__('Address'), 'address')->required(),
             Code::make(__('Office Hours'), 'officehours')->required(),
-            Code::make(__('Services'), 'servicelist')->required(),
+            Markdown::make(__('Services'), 'servicelist')->required(),
             Image::make(__('Services BG'), 'servicesbackground')->required(),
             Markdown::make(__('Services Intro'), 'servicesintro')->required(),
             Markdown::make(__('Accreditations'), 'accreditations')->required(),
