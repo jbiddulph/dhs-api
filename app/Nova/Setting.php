@@ -8,6 +8,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Fields\Code;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Setting extends Resource
@@ -47,10 +48,11 @@ class Setting extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make(__('Telephone'), 'telephone')->required(),
+            Text::make(__('Website Name'), 'website_name')->required(),
             Text::make(__('Slogan'), 'slogan')->required(),
+            Text::make(__('Telephone'), 'telephone')->required(),
             Markdown::make(__('Address'), 'address')->required(),
-            Trix::make(__('Office Hours'), 'officehours')->required(),
+            Code::make(__('Office Hours'), 'officehours')->required(),
             Image::make(__('Logo'), 'logo')->required(),
             Text::make(__('Email'), 'email')->required(),
             Text::make(__('Facebook'), 'facebook'),

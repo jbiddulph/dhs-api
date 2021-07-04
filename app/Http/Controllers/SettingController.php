@@ -13,9 +13,8 @@ class SettingController extends Controller
      */
     public function index()
     {
-        return Setting::all();
+        return Setting::where('id', 1)->first();
     }
-
     /**
      * Store a newly created resource in storage.
      *
