@@ -5,20 +5,18 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Markdown;
-use Laravel\Nova\Fields\Trix;
-use Laravel\Nova\Fields\Code;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Setting extends Resource
+class Header extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Models\Setting::class;
+    public static $model = \App\Models\Header::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -35,7 +33,7 @@ class Setting extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'title'
+        'id', 'title', 'description'
     ];
 
     /**
@@ -48,23 +46,10 @@ class Setting extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make(__('Website Name'), 'website_name')->required(),
-            Text::make(__('Slogan'), 'slogan')->required(),
-            Text::make(__('Telephone'), 'telephone')->required(),
-            Markdown::make(__('Address'), 'address')->required(),
-            Code::make(__('Office Hours'), 'officehours')->required(),
-            Code::make(__('Services'), 'servicelist')->required(),
-            Image::make(__('Services BG'), 'servicesbackground')->required(),
-            Markdown::make(__('Services Intro'), 'servicesintro')->required(),
-            Markdown::make(__('Accreditations'), 'accreditations')->required(),
-            Image::make(__('Logo'), 'logo')->required(),
-            Text::make(__('Email'), 'email')->required(),
-            Text::make(__('Facebook'), 'facebook'),
-            Text::make(__('Google'), 'google'),
-            Text::make(__('Instagram'), 'instagram'),
-            Text::make(__('Youtube'), 'youtube'),
-            Text::make(__('Twitter'), 'twitter'),
-            Text::make(__('WhatsApp'), 'whatsapp'),
+            Image::make(__('Category Image'), 'categoryimg')->required()->sortable(),
+            Image::make(__('Category Title'), 'categorytitle')->required()->sortable(),
+            Text::make(__('Category Text'), 'categorytext')->hideFromIndex()->sortable(),
+            Text::make(__('Category Link'), 'categorylink')->hideFromIndex()->sortable(),
         ];
     }
 

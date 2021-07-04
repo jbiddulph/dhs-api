@@ -20,6 +20,10 @@ class CreateSettingsTable extends Migration
             $table->string('telephone');
             $table->text('address');
             $table->text('officehours');
+            $table->text('servicelist');
+            $table->string('servicebackground');
+            $table->text('servicesintro');
+            $table->text('accreditations');
             $table->string('logo');
             $table->string('email');
             $table->string('facebook')->nullable();
