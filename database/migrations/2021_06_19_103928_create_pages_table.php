@@ -21,6 +21,9 @@ class CreatePagesTable extends Migration
             $table->text('description')->nullable();
             $table->text('content');
             $table->string('image');
+            $table->boolean('showServices')->default(false);
+            $table->boolean('showAccreditations')->default(false);
+            $table->boolean('showCategories')->default(false);
             $table->timestamps();
         });
     }

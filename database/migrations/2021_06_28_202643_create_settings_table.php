@@ -21,7 +21,7 @@ class CreateSettingsTable extends Migration
             $table->text('address');
             $table->text('officehours');
             $table->text('servicelist');
-            $table->string('servicebackground');
+            $table->string('servicebackground')->nullable();
             $table->text('servicesintro');
             $table->text('accreditations');
             $table->string('logo');
