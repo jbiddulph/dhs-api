@@ -54,7 +54,7 @@ class Setting extends Resource
             Markdown::make(__('Address'), 'address')->required(),
             Code::make(__('Office Hours'), 'officehours')->required(),
             Markdown::make(__('Services'), 'servicelist')->required(),
-            Image::make(__('Services BG'), 'servicesbackground')->required(),
+            Image::make(__('Services BG'), 'servicebackground')->required(),
             Markdown::make(__('Services Intro'), 'servicesintro')->required(),
             Markdown::make(__('Accreditations'), 'accreditations')->required(),
             Image::make(__('Logo'), 'logo')->required(),
