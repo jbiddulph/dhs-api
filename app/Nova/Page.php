@@ -5,6 +5,8 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Textarea;
@@ -49,12 +51,16 @@ class Page extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
+            Number::make(__('Position'), 'position')->required(),
             Text::make(__('Title'), 'title')->required(),
             Text::make(__('Link Name'), 'linkname')->required(),
             Text::make(__('Slug'), 'slug')->required(),
             Text::make(__('Description'), 'description')->hideFromIndex()->sortable(),
             Code::make(__('Content'), 'content')->hideFromIndex()->sortable(),
             Image::make(__('Image'), 'image')->required(),
+            Boolean::make(__('Show Services'), 'showServices'),
+            Boolean::make(__('Show Accreditations'), 'showAccreditations'),
+            Boolean::make(__('Show Categories'), 'showCategories'),
         ];
     }
 
