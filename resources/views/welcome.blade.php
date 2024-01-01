@@ -30,19 +30,8 @@
 </head>
 
 <body id="page-top">
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Design  Build  Develop</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Choose your design, Build your design, Develop your build</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
-      </div>
-    </div>
-  </header>
-
   <div>
+    <h2>Naked Sloth</h2>
     <img src="./images/ns-logo.jpg" alt="Naked Sloth">
   </div>
   <!-- Contact Section -->
@@ -86,19 +75,6 @@
           </div>
         </div>
       </div>
-
-<!--      <div class="social d-flex justify-content-center">-->
-<!--        <a href="#" class="mx-2">-->
-<!--          <i class="fab fa-twitter"></i>-->
-<!--        </a>-->
-<!--        <a href="#" class="mx-2">-->
-<!--          <i class="fab fa-facebook-f"></i>-->
-<!--        </a>-->
-<!--        <a href="#" class="mx-2">-->
-<!--          <i class="fab fa-github"></i>-->
-<!--        </a>-->
-<!--      </div>-->
-
     </div>
   </section>
 
