@@ -25,7 +25,7 @@
         width: 1200px;
         margin: 0 auto;
     }
-    #page-top div img {
+    #page-top div {
         text-align: center; 
     }
   </style>
