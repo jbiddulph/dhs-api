@@ -32,7 +32,7 @@
 <body id="page-top">
   <div>
     <h2>Naked Sloth</h2>
-    <img src="./images/ns-logo.jpg" alt="Naked Sloth">
+    <img src="./images/ns-logo.jpg" width="375" height="253" alt="Naked Sloth">
   </div>
   <!-- Contact Section -->
   <section class="contact-section bg-black">
