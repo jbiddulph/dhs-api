@@ -22,7 +22,7 @@
 
   <style>
     #page-top {
-        width: 100px;
+        width: 1200px;
         margin: 0 auto;
     }
     #page-top div img {
