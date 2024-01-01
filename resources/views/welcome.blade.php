@@ -47,7 +47,6 @@
             <div class="card-body text-center">
               <i class="fas fa-envelope text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
               <div class="small text-black-50">
                 <a href="#">hello[at]nakedsloth.co.uk</a>
               </div>
@@ -60,7 +59,6 @@
             <div class="card-body text-center">
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
               <div class="small text-black-50">+44 (0)7935 085 736</div>
             </div>
           </div>
