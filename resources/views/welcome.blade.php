@@ -22,8 +22,11 @@
 
   <style>
     #page-top {
-        width: 100%;
+        width: 100px;
         margin: 0 auto;
+    }
+    #page-top div img {
+        text-align: center; 
     }
   </style>
 </head>
